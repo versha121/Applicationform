@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>application</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      {% csrf_token %}
+  
+      <h1>Job application form</h1>
+      FULL NAME :
+      <input type=" text" name="fullname" placeholder="first name" />
+      <input type=" text" name = "lastname" placeholder="Last name" />
+      <br>
+      <br>
+      DATE OF BIRTH :
+      <input type="text" name="dateofbirth" placeholder="day/month/year" />
+      <br>
+      <br>
+      E-MAIL :
+      <input type="email" name="email" placeholder="enter your email" />
+      <br>
+      <br>
+      CURRENT ADDRESS : <address type = "address" name="currentaddress"></address>
+      <br>
+      <h5>What position are you APPLYING for ?</h5>
+      <br>
+      <select name = "jobprofile" placeholder = "Select job-profile">
+        <option value ="python developer" > python developer  </option>
+        <option value ="JAva developer" > JAva developer  </option>
+        <option value ="front-end developer" > front-end developer   </option>
+        <option value = "backend developer"> front-end developer </option>            
+    </select>
+    <br>
+    <h5> Joining date ?</h5>
+    <input type="date" name="joiningdate" >
+
+
+    <h5> what is your current employment status ?</h5>
+    <label for = "employed">
+        <input type = "checkbox" value = "employed" name = "status" id="101">employed</label>
+    <label for = "student">
+        <input type = "checkbox" value = "student" name = "status" id="102">Student</label>
+    <label for = "fresher">
+        <input type = "checkbox" value = "fresher" name = "status" id="103">Fresher</label>
+
+        <br>
+    
+    <button> submit </button>
+  
+
+
+    </form>
+    {{output}}
+  </body>
+</html>

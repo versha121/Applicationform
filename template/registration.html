@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>registration</title>
+  </head>
+  <body>
+    <form action "" method="POST">
+      {% csrf_token %}
+      
+      <h1>Registration form</h1>
+      FULL NAME :
+      <input type=" text" name="fullname" placeholder="first name" />
+      <input type=" text" name = "lastname" placeholder="Last name" />
+      <br>
+      <br>
+      DATE OF BIRTH :
+      <input type="text" name="dateofbirth" placeholder="day/month/year" />
+      <br>
+      <br> 
+      E-MAIL :
+      <input type="email" name="email" placeholder="enter your email" />
+      <br>
+      <br>
+      CURRENT ADDRESS : <input type = "text" name="currentaddress" />
+      <br>
+      <br>
+      CONTACT NO. : <input type ="number" name="number" />
+      <br>
+      <br>
+      <button> submit </button>
+ 
+
+    </form>
+
+  </body>
+</html>
